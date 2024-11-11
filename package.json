@@ -10,7 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commitlint": "^19.5.0",
     "lefthook": "^1.8.2",
     "vitest": "^2.1.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0"
   }
 }
