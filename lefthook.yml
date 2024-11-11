@@ -12,3 +12,9 @@ commit-msg:
   commands:
     lint-commit-msg:
       run: pnpm commitlint
+
+pre-push:
+  parallel: true
+  commands:
+    test: 
+      run: pnpm test

@@ -8,7 +8,8 @@
 		"format": "pnpm exec biome format --write",
 		"format:staged": "pnpm exec lint-staged",
 		"commitlint": "pnpm exec commitlint --edit",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "pnpm exec vitest run",
+		"test:watch": "pnpm exec vitest watch"
 	},
 	"keywords": [],
 	"author": "",
