@@ -4,18 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "commitlint": "pnpm exec commitlint --edit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commitlint": "^19.5.0",
-    "lefthook": "^1.8.2",
-    "vitest": "^2.1.4"
   },
   "devDependencies": {
+    "lefthook": "^1.8.2",
+    "vitest": "^2.1.4",
+    "commitlint": "^19.5.0",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0"
+  },
+  "engines": {
+    "node": "^22.11.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    }
   }
 }

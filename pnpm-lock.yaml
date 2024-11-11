@@ -7,7 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
+      '@commitlint/cli':
+        specifier: ^19.5.0
+        version: 19.5.0(@types/node@22.9.0)(typescript@5.6.3)
+      '@commitlint/config-conventional':
+        specifier: ^19.5.0
+        version: 19.5.0
       commitlint:
         specifier: ^19.5.0
         version: 19.5.0(@types/node@22.9.0)(typescript@5.6.3)
@@ -17,13 +23,6 @@ importers:
       vitest:
         specifier: ^2.1.4
         version: 2.1.4(@types/node@22.9.0)
-    devDependencies:
-      '@commitlint/cli':
-        specifier: ^19.5.0
-        version: 19.5.0(@types/node@22.9.0)(typescript@5.6.3)
-      '@commitlint/config-conventional':
-        specifier: ^19.5.0
-        version: 19.5.0
 
 packages:
 
