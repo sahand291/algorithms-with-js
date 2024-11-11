@@ -6,6 +6,7 @@
 	"scripts": {
 		"lint": "pnpm exec biome lint",
 		"format": "pnpm exec biome format --write",
+		"format:staged": "pnpm exec lintstaged",
 		"commitlint": "pnpm exec commitlint --edit",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -18,6 +19,7 @@
 		"@commitlint/config-conventional": "^19.5.0",
 		"commitlint": "^19.5.0",
 		"lefthook": "^1.8.2",
+		"lint-staged": "^15.2.10",
 		"vitest": "^2.1.4"
 	},
 	"engines": {
