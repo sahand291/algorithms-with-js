@@ -12,10 +12,10 @@
 #       tags: backend security
 #       run: bundle audit
 #
- pre-commit:
+ commnit-msg:
    parallel: true
    commands:
-     eslint:
+     lint-commit-msg:
        run: npx commitlint --edit
 #     rubocop:
 #       tags: backend style
