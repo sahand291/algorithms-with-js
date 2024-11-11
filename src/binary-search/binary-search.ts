@@ -1,3 +1,3 @@
-export default binarySearch(numbers: number[]) {
-	return [1,2,3]
+export default function binarySearch() {
+	return [1, 2, 3];
 }

@@ -1,31 +1,32 @@
 {
-  "name": "algorithms-with-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "commitlint": "pnpm exec commitlint --edit",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "lefthook": "^1.8.2",
-    "vitest": "^2.1.4",
-    "commitlint": "^19.5.0",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0"
-  },
-  "engines": {
-    "node": "^22.11.0"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "onFail": "error"
-    }
-  }
+	"name": "algorithms-with-js",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "pnpm exec biome lint",
+		"format": "pnpm exec biome format --write",
+		"commitlint": "pnpm exec commitlint --edit",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-conventional": "^19.5.0",
+		"commitlint": "^19.5.0",
+		"lefthook": "^1.8.2",
+		"vitest": "^2.1.4"
+	},
+	"engines": {
+		"node": "^22.11.0"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"onFail": "error"
+		}
+	}
 }
