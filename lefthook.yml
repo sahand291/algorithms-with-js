@@ -11,11 +11,11 @@
 #       tags: backend security
 #       run: bundle audit
 #
- commnit-msg:
-   parallel: true
-   commands:
-     lint-commit-msg:
-       run: npx commitlint --edit
+commit-msg:
+  parallel: true
+  commands:
+    lint-commit-msg:
+      run: npx commitlint --edit
 #     rubocop:
 #       tags: backend style
 #       glob: "*.rb"
