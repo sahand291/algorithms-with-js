@@ -1,12 +1,13 @@
-pre-commit: 
+pre-commit:
   parallel: true
-  commands: 
-    lint: 
+  commands:
+    lint:
       glob: "*.{js,ts}"
       run: pnpm lint {staged_files}
     format:
       glob: "*.{js,ts,json,yml,yaml}"
       run: pnpm format:staged
+
 commit-msg:
   parallel: true
   commands:
@@ -16,5 +17,5 @@ commit-msg:
 pre-push:
   parallel: true
   commands:
-    test: 
+    test:
       run: pnpm test
